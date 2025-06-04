@@ -1,11 +1,8 @@
-// GenericChartPreview.jsx
 import React, { useState, useEffect, useRef } from "react";
 import { Bar, Pie, Line, Doughnut } from "react-chartjs-2";
 import ChartLegend from "./ChartLegend";
 import Skeleton from "./Skeleton";
 import "../styles/ChartPreview.css";
-
-// Register needed chart.js modules outside component
 import {
   Chart as ChartJS,
   ArcElement,
