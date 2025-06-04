@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ChartCard from "./ChartCard";
 import GenericChartPreview from "./GenericChartPreview";
 import "../styles/ChartGrid.css";
@@ -6,6 +6,13 @@ import "../styles/ChartGrid.css";
 const chartTypes = ["bar", "pie", "line", "doughnut"];
 
 const ChartGrid = () => {
+  const [loading, setloading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setloading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
   const charts = Array.from({ length: 15 });
 
   return (
@@ -13,7 +20,11 @@ const ChartGrid = () => {
       {charts.map((_, index) => {
         const type = chartTypes[index % chartTypes.length];
         return (
-          <ChartCard key={index} title={`पेशाको अनुसार घरधुरी`}>
+          <ChartCard
+            key={index}
+            title={`पेशाको अनुसार घरधुरी`}
+            loading={loading}
+          >
             <GenericChartPreview
               type={type}
               labelKey="profession"
