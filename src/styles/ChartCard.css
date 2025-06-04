@@ -13,7 +13,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   margin: 1rem;
-  height: 455px; /* 👈 Add this to reduce card height */
+  height: 455px; 
   display: flex;
   flex-direction: column;
 }
