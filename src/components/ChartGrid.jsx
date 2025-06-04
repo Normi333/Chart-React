@@ -1,10 +1,9 @@
-// ChartGrid.jsx
 import React from "react";
 import ChartCard from "./ChartCard";
 import GenericChartPreview from "./GenericChartPreview";
 import "../styles/ChartGrid.css";
 
-const chartTypes = ["bar", "pie", "line", "doughnut"]; // Add more if needed
+const chartTypes = ["bar", "pie", "line", "doughnut"];
 
 const ChartGrid = () => {
   const charts = Array.from({ length: 15 });
@@ -12,7 +11,7 @@ const ChartGrid = () => {
   return (
     <div className="chart-grid">
       {charts.map((_, index) => {
-        const type = chartTypes[index % chartTypes.length]; // cycle through chart types
+        const type = chartTypes[index % chartTypes.length];
         return (
           <ChartCard key={index} title={`पेशाको अनुसार घरधुरी`}>
             <GenericChartPreview
