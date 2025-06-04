@@ -14,13 +14,13 @@ const ChartGrid = () => {
       {charts.map((_, index) => {
         const type = chartTypes[index % chartTypes.length]; // cycle through chart types
         return (
-          <ChartCard key={index} title={`पेशाको अनुसार घरधुरी (${type})`}>
+          <ChartCard key={index} title={`पेशाको अनुसार घरधुरी`}>
             <GenericChartPreview
               type={type}
               labelKey="profession"
               valueKey="households"
               chartLabel="पेशा"
-              title={`चार्ट प्रकार: ${type}`}
+              title={`पेशाको अनुसार घरधुरी वृत्तचित्र (${type})`}
             />
           </ChartCard>
         );
