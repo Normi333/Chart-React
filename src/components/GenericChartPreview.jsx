@@ -79,9 +79,12 @@ const GenericChartPreview = ({
       {
         label: chartLabel,
         data: values.map((v, i) => (hiddenItems[i] ? null : v)),
-        backgroundColor: colors,
-        borderColor: "#fff",
+        backgroundColor: type === "line" ? "rgba(75,192,192,0.2)" : colors,
+        borderColor: type === "line" ? "rgba(75,192,192,1)" : "#fff",
         borderWidth: 2,
+        fill: false,
+        tension: 0.3,
+        pointBackgroundcolor: type === "line" ? colors : undefined,
       },
     ],
   };
