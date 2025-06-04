@@ -1,0 +1,20 @@
+/* canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+} 
+.barchart-container {
+  position: relative;
+  height: 100%;
+} */
+.barchart-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* ensures canvas scales sharply */
+}
+
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
