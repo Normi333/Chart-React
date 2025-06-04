@@ -101,7 +101,7 @@ const GenericChartPreview = ({
       title: {
         display: true,
         text: title,
-        font: { size: 18 },
+        font: { size: 18, family: "'Kalimati'" },
       },
       tooltip: {
         callbacks: {

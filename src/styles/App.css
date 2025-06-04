@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+@font-face {
+  font-family: "Kalimati";
+  src: url("../assets/kalimati_regular-webfont.woff") format("woff"),
+    url("../assets/kalimati_regular-webfont.woff2") format("woff2");
+}

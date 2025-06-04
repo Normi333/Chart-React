@@ -56,12 +56,18 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+@font-face {
+  font-family: "Kalimati";
+  src: url("../assets/kalimati_regular-webfont.woff") format("woff"),
+    url("../assets/kalimati_regular-webfont.woff2") format("woff2");
+}
 
 .chart-legend li {
   cursor: default;
   font-weight: 500;
   font-size: 1rem;
   display: flex;
+  font-family: Kalimati, sans-serif;
   align-items: center;
   transition: color 0.3s ease;
 }
@@ -78,4 +84,3 @@
   margin-right: 0.5rem;
   border-radius: 3px;
 }
-
