@@ -240,6 +240,7 @@ const GenericChartPreview = ({
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    devicePixelRatio: 2,
     plugins: {
       title: {
         display: true,
@@ -259,13 +260,26 @@ const GenericChartPreview = ({
   };
 
   return (
-    <div className="barchart-container">
-      {loading && <Skeleton height={400} />}
+    // <div className="barchart-container">
+    //   {loading && <Skeleton height={400} />}
+    //   {!loading && (
+    //     <>
+    //       <ChartComponent data={data} options={options} height={400} />
+    //       <ChartLegend
+    //         labels={labels}
+    //         colors={colors}
+    //         hoveredIndex={hoveredIndex}
+    //       />
+    //     </>
+    //   )}
+    // </div>
+    <div className="barchart-container" style={{ height: "300px" }}>
+      {loading && <Skeleton height={300} />}
       {!loading && (
         <>
-          <ChartComponent data={data} options={options} height={400} />
+          <ChartComponent data={data} options={options} height={300} />
           <ChartLegend
-            labels={labels}
+            labels={data.labels}
             colors={colors}
             hoveredIndex={hoveredIndex}
           />
