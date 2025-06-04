@@ -1,7 +1,6 @@
 .barchart-container {
-  /* display: flex; */
   flex-direction: column;
-  overflow: visible; /* allows legend to show */
+  overflow: visible;
 }
 
 canvas {
