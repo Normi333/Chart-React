@@ -1,11 +1,22 @@
-.navbar {
+/* .navbar {
   background: linear-gradient(to right, #1c97e3, #00bfff);
   padding: 0.7rem 1.5rem;
   color: white;
   width: 100%;
   position: relative;
-  /* z-index: 1000; */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+} */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  height: 60px; /* adjust based on your actual navbar height */
+  background: linear-gradient(to right, #1c97e3, #00bfff);
+
+  /* background-color: #fff; or your navbar bg */
+  z-index: 1000; /* keep on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {

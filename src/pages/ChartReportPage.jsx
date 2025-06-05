@@ -6,8 +6,8 @@ import "../styles/ChartReportPage.css";
 const ChartReportPage = () => {
   return (
     <div className="chart-report-container">
-        <div className="chart-sidebar">
-      <ChartSidebar />
+      <div className="chart-sidebar">
+        <ChartSidebar />
       </div>
       <div className="chart-content">
         <ChartGrid />

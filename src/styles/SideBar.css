@@ -1,13 +1,10 @@
 .sidebar {
-  height: 100%;
+  position: relative; /* match navbar height */
+  height: calc(100vh - 60px); /* full height minus navbar */
   width: 250px;
-  /* background: linear-gradient(to right, #1e90ff, #00bfff); */
   background: hsl(203, 99%, 34%);
-  /* background: hsl(203, 100%, 68%); */
-  padding: 1rem;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
-  position: relative;
 }
 
 .sidebar h3,
@@ -56,8 +53,9 @@
 
 .gis-container {
   display: flex;
-  /* height: calc(100vh - 60px); */
   height: 100vh;
   width: 100%;
   font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 60px; /* Add this to push content below fixed navbar */
+  box-sizing: border-box;
 }
