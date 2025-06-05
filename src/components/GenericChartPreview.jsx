@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Bar, Pie, Line, Doughnut } from "react-chartjs-2";
-import ChartLegend from "./ChartLegend";
-import Skeleton from "./Skeleton";
+import ChartLegend from "../utils/ChartLegend";
+import Skeleton from "../utils/Skeleton";
 import "../styles/ChartPreview.css";
 import {
   Chart as ChartJS,

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ChartCard from "./ChartCard";
-import GenericChartPreview from "./GenericChartPreview";
+import GenericChartPreview from "../components/GenericChartPreview";
 import "../styles/ChartGrid.css";
 
 const chartTypes = ["bar", "pie", "line", "doughnut"];
