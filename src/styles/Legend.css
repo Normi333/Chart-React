@@ -2,22 +2,23 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background: #2f4050;
-  border: 2px solid #3c4a5a;
+  /* background: #2f4050; */
+  background: hsl(240, 70%, 76%);
+  border: 1px solid #ffffff;
   padding: 10px;
   font-size: 14px;
   border-radius: 6px;
   z-index: 1000;
   color: #ffffff;
   min-width: 180px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
 
 .legend-box strong {
   display: block;
   margin-bottom: 8px;
   font-size: 16px;
-  color: #9fb3c8;
+  color: #ffffff;
 }
 
 .legend-item {

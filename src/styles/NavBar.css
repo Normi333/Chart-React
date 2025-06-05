@@ -1,5 +1,5 @@
 .navbar {
-  background-color: hwb(203 11% 11%);
+  background: linear-gradient(to right, #1c97e3, #00bfff);
   padding: 0.7rem 1.5rem;
   color: white;
   width: 100%;
