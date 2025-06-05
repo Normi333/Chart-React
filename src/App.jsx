@@ -15,7 +15,6 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/report" element={<ChartGrid />} />
-            {/* <Route path="/map" element={<Map />} /> */}
             <Route path="/map" element={<MapPage />} />
           </Routes>
         </div>
