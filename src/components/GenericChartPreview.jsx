@@ -52,6 +52,14 @@ const GenericChartPreview = ({
   const ChartComponent = chartMap[type];
 
   useEffect(() => {
+    if (chartRef.current) {
+      setTimeout(() => {
+        chartRef.current.resize();
+      }, 300);
+    }
+  }, [isExpanded]);
+
+  useEffect(() => {
     setTimeout(() => {
       setChartData([
         { profession: "अन्य", households: 100 },
@@ -120,11 +128,11 @@ const GenericChartPreview = ({
     <div
       className="barchart-container"
       style={{
-        // width: "100%",
+        width: "100%",
+        height: isExpanded ? "100%" : "300px",
+        position: "relative",
         // maxWidth: "800px",
         // aspectRatio: "16/9",
-        // position: "relative",
-        height: isExpanded ? "600px" : "300px",
       }}
     >
       <div className="chart-wrapper">

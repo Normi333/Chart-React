@@ -73,8 +73,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 80vw;
-  height: 80vh;
+  width: 69vw;
+  height: 69vh;
   z-index: 999;
   background: white;
   border-radius: 12px;
@@ -102,14 +102,11 @@
 }
 
 .chart-card.expanded .chart-card-body {
-  /* display: flex; */
-  /* flex-direction: row; */
-  margin-top: 80px;
-  margin-right: 15%;
-  margin-left: 25%;
+  margin-top: 3%;
+  margin-left: 9%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  /* align-items: center; */
-  height: calc(100vh - 70px);
-  padding: 1rem 2rem;
-  overflow: hidden;
+  height: 100%;
 }
