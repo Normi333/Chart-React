@@ -1,0 +1,24 @@
+.chart-report-container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.chart-sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  height: calc(100vh - 49px);
+  position: fixed;
+  box-sizing: border-box;
+  /* overflow-y: auto; */
+  font-family: sans-serif;
+  border-right: 1px solid #ccc;
+}
+
+.chart-content {
+  margin-left: 250px;
+  /* margin-top: -25px; */
+  padding: 12px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}

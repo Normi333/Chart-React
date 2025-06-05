@@ -14,9 +14,9 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            {/* <Route path="/report" element={<ChartReportPage />} /> */}
-            <Route path="/report" element={<ChartGrid />} />
             <Route path="/map" element={<MapPage />} />
+            <Route path="/report" element={<ChartReportPage />} />
+            {/* <Route path="/report" element={<ChartGrid />} /> */}
           </Routes>
         </div>
       </>
