@@ -12,7 +12,7 @@
   box-sizing: border-box;
   /* overflow-y: auto; */
   font-family: sans-serif;
-  border-right: 1px solid #ccc;
+  /* border-right: 1px solid #ccc; */
 }
 
 .chart-content {
