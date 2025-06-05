@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaExpandAlt, FaCompressAlt } from "react-icons/fa";
 import "../styles/ChartCard.css";
 import Skeleton from "./Skeleton";
 
 const ChartCard = ({ title, children, loading = false }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isExpanded ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isExpanded]);
 
   const toggleExpand = () => setIsExpanded((prev) => !prev);
 
