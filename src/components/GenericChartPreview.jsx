@@ -41,6 +41,7 @@ const GenericChartPreview = ({
   valueKey = "households",
   chartLabel = "पेशा",
   title = "चार्ट",
+  isExpanded = false,
 }) => {
   const [chartData, setChartData] = useState([]);
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -116,25 +117,31 @@ const GenericChartPreview = ({
   };
 
   return (
-    <div className="barchart-container" style={{ height: "300px" }}>
-      {loading && <Skeleton height={300} />}
-      {!loading && (
-        <>
-          <ChartComponent
-            ref={chartRef}
-            data={data}
-            options={options}
-            height={300}
-          />
-          <ChartLegend
-            labels={data.labels}
-            colors={colors}
-            hoveredIndex={hoveredIndex}
-            onClick={toggleVisibility}
-            hiddenItems={hiddenItems}
-          />
-        </>
-      )}
+    <div
+      className="barchart-container"
+      style={{
+        // width: "100%",
+        // maxWidth: "800px",
+        // aspectRatio: "16/9",
+        // position: "relative",
+        height: isExpanded ? "600px" : "300px",
+      }}
+    >
+      <div className="chart-wrapper">
+        {loading && <Skeleton height={300} />}
+        {!loading && (
+          <>
+            <ChartComponent ref={chartRef} data={data} options={options} />
+            <ChartLegend
+              labels={data.labels}
+              colors={colors}
+              hoveredIndex={hoveredIndex}
+              onClick={toggleVisibility}
+              hiddenItems={hiddenItems}
+            />
+          </>
+        )}
+      </div>
     </div>
   );
 };
