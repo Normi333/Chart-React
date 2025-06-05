@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Map from "./Map";
+import Map from "../utils/Map";
 import SideBar from "../utils/SideBar";
 import Legend from "../utils/Legend";
 import "../styles/App.css";
