@@ -51,3 +51,7 @@
   src: url("../assets/kalimati_regular-webfont.woff") format("woff"),
     url("../assets/kalimati_regular-webfont.woff2") format("woff2");
 }
+
+body {
+  background-color: rgb(221, 221, 221);
+}

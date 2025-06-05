@@ -1,12 +1,12 @@
 import React from "react";
+import "../styles/HomePage.css";
 
 const HomePage = () => {
   return (
-    <div className="home-page">
-      <h2>Welcome to Mock-Mun</h2>
-      <p>
-        This is the dashboard or landing page. Select a feature from the navbar.
-      </p>
+    <div className="home-container">
+      <div className="home-content">
+        <h1 className="home-title">Welcome to Mock-Mun</h1>
+      </div>
     </div>
   );
 };
