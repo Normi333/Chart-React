@@ -13,7 +13,7 @@ const MapPage = () => {
   ]);
 
   return (
-    <div className="gis-container" style={{ display: "flex" }}>
+    <div className="gis-container">
       <SideBar
         selectedLayers={selectedLayers}
         setSelectedLayers={setSelectedLayers}

@@ -65,7 +65,12 @@ function Map({ selectedLayers }) {
 
   return (
     <div className="map-area">
-      <MapContainer center={position} zoom={12} className="map">
+      <MapContainer
+        center={position}
+        zoom={12}
+        zoomControl={false}
+        className="map"
+      >
         <LayersControl>
           <LayersControl.Overlay checked name="OpenStreetMap">
             <TileLayer
