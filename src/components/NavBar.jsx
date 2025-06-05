@@ -1,12 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../styles/NavBar.css";
 
 const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <h1 className="navbar-title">Dashboard</h1>
+        <Link to="/" className="navbar-title">
+          Mock-Mun
+        </Link>
         <ul className="navbar-links">
           <li>
             <NavLink
