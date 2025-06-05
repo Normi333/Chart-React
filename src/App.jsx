@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ChartGrid from "./utils/ChartGrid";
+import ChartGrid from "./pages/ChartGrid";
 import NavBar from "./components/NavBar";
+import HomePage from "./pages/HomePage";
 import "./styles/App.css";
 
 function App() {
@@ -9,9 +10,9 @@ function App() {
       <NavBar />
       <div className="App">
         <Routes>
-          <Route path="/" element={<ChartGrid />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/report" element={<ChartGrid />} />
           {/* <Route path="/map" element={<MapPage />} /> */}
-          {/* <Route path="/report" element={<ReportPage />} /> */}
         </Routes>
       </div>
     </Router>

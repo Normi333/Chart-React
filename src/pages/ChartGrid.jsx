@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ChartCard from "./ChartCard";
+import ChartCard from "../utils/ChartCard";
 import GenericChartPreview from "../components/GenericChartPreview";
 import "../styles/ChartGrid.css";
 

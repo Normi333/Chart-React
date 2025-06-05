@@ -6,9 +6,9 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-title">
+        <NavLink to="/" className="navbar-title">
           Mock-Mun
-        </Link>
+        </NavLink>
         <ul className="navbar-links">
           <li>
             <NavLink
