@@ -21,7 +21,7 @@
 import React, { useState } from "react";
 import ChartSidebar from "../utils/ChartSidebar";
 import reportHtmlData from "../data/reportHtmlData";
-import ChartGrid from "../pages/ChartGrid"; // your existing chart card grid component
+import ChartGrid from "../pages/ChartGrid";
 import "../styles/ChartReportPage.css";
 
 const ChartReportPage = () => {
@@ -40,7 +40,7 @@ const ChartReportPage = () => {
         {selectedReport ? (
           <div dangerouslySetInnerHTML={{ __html: selectedReport }} />
         ) : (
-          <ChartGrid /> // show your chart cards here
+          <ChartGrid />
         )}
       </div>
     </div>
