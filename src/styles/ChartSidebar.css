@@ -1,0 +1,51 @@
+.folder-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.folder-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.folder-name {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(203, 99%, 34%);
+  font-weight: bold;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.arrow {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.report-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: inherit;
+  padding-left: 1.5rem; /* indent dropdown items slightly */
+  display: block; /* <--- this is the key fix! */
+}
+
+.report-list.open {
+  max-height: 1000px; /* adjust if more items */
+}
+
+.report-item {
+  color: #ddd;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.report-item:hover {
+  color: white;
+}
